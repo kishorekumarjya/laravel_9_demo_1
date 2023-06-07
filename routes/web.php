@@ -13,6 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/** 
+ * https://laravel.com/docs/9.x/routing#redirect-routes
+ * Basic Routing
+ * 
+ * */
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/about-us', function () {
+    return "This is about us url";
+});
+
+Route::get('/contact-us', function () {
+    return "This is contact-us url";
 });
